@@ -2,7 +2,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  ...{ experimental: { serverComponentsExternalPackages: ["ipfs-utils"] } },
+  ...{ experimental: { serverComponentsExternalPackages: ["ipfs-utils"], webpackBuildWorker: true } },
   reactStrictMode: true,
   typescript: {
     ignoreBuildErrors: true,
